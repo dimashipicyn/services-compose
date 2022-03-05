@@ -1,0 +1,9 @@
+version: "2.0"
+services:
+  nginx:
+    build: ./requirements/nginx
+    ports:
+      - "80:80"
+      - "443:443"
+  wordpress:
+    build: ./requirements/wordpress
